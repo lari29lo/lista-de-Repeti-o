@@ -16,33 +16,3 @@ do {
    printf ("parabens, voce e maior de idade!");
  
 }
-
-
-
-numero -14 /*Elabore um programa que faça a leitura de vários números inteiros até que se digite um
-número negativo. O programa tem de retornar o maior e o menor número lido.*/
-
-#include <stdio.h>
-
-int main (){
-	int numero;
-	int maior=0;
-	int menor=1000;
-	
-	do { 
-		printf ("digite um numero: ");
-		scanf ("%d", &numero); 
-		
-		if (numero>maior){	
-		maior = numero;
-		}
-		else if (numero<menor){
-		menor= numero;
-		}
-		
-	}while(numero > 0);
-		printf ("maior %d\n", maior);
-		printf ("menor %d\n", menor) ;
-return 0;
-}
-
